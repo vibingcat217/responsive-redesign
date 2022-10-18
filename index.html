@@ -1,0 +1,184 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width" , initial-scale="1" />
+    <link rel="stylesheet" href="index.css" />
+    <title>Responsive Redesign</title>
+  </head>
+
+  <body>
+    <!-- Top bar -->
+    <div id="nav" class="navbar">
+      <a href="#home">Home</a>
+      <a href="#problems">Problems</a>
+      <a href="#wireframe">Wireframes</a>
+      <a href="#styleguide">Style Guide</a>
+      <a href="#prototype">Prototypes</a>
+      <a href="#redesign">Redesign</a>
+      <a href="javascript:void(0);" class="icon" onclick="openNav()">
+        <button id="openbtn" class="menubtn">&#9776;</button>
+      </a>
+    </div>
+
+    <div id="main" class="main">
+      <div id="home" class="section">
+        <h1>Redesigning the Johnny Burrito website</h1>
+        <p>
+          This project is a redesign of Johnny Burrito's website. Click the
+          image below or go to
+          <a
+            href="http://www.johnnyburrito.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >http://www.johnnyburrito.com/</a
+          >
+          to check it out.
+        </p>
+        <div class="screenshot-container">
+          <a
+            href="http://www.johnnyburrito.com/"
+            target="_blank"
+            rel="noopener noreferrer"
+            ><img
+              class="screenshot"
+              src="assets/johnnyburrito.com.png"
+              alt="screenshot of johnnyburrito.com"
+          /></a>
+        </div>
+        <p class="caption">
+          I chose to redesign this website because I frequented this family
+          owned restaurant in Charlotte over the summer. If only their website
+          were as good as their service.
+        </p>
+      </div>
+
+      <div id="problems" class="section">
+        <h1>Problems</h1>
+        <p>
+          The website has several issues which are presented in the below. The
+          numbers in the list correspond to the numbers in the image, labelling
+          where the issue is on the original website.
+        </p>
+        <p>For a closer look, hover over the image and scroll through!</p>
+        <div style="display: flex; flex-direction: row; margin-bottom: 2rem">
+          <div class="scroll">
+            <img
+              class="problems-img"
+              src="assets/johnnyburrito-problems.png"
+              alt="screenshot of the johnny burrito website with numbers labelling problems"
+            />
+          </div>
+          <ol>
+            <li>
+              "Fun Stuff" opens up mini-menu that is difficult to use since it
+              often closes when you hover towards it
+            </li>
+            <li>Random Text</li>
+            <li>No coherent order to tabs (Why isn't the Home tab first?)</li>
+            <li>Brightly colored text is distracting and low contrast</li>
+            <li>Layout and sections aren't clear</li>
+            <li>
+              Information about holidays is in tiny font and hard to notice
+            </li>
+            <li>Images and text aren't aligned</li>
+            <li>Not clear that the pictures are supposed to be links</li>
+            <li>Missing or uninformative alt text</li>
+            <li>Random links make the page extend unnecessarily</li>
+            <li>Unnecessary clutter advertising the website makers</li>
+            <li>Redundant links on bottom</li>
+          </ol>
+        </div>
+        <p>
+          <a
+            href="https://wave.webaim.org/"
+            target="_blank"
+            rel="noopener noreferrer"
+            >WebAIM WAVE</a
+          >
+          was also used to detect possible accessibility problems. This web
+          accessibility tool had similar findings. Its main complaints were the
+          lack of alt text and low contrast.
+        </p>
+        <p>Some other findings were</p>
+        <ul>
+          <li>Missing first level heading</li>
+          <li>No page regions</li>
+          <li>Three redundant links</li>
+          <li>One empty link</li>
+          <li>Language missing or invalid</li>
+        </ul>
+        <p>
+          I agree with these findings for the most part. I would add that the
+          text color is not only low contrast, but also distracting and visually
+          repellent.
+        </p>
+      </div>
+
+      <div id="wireframe" class="section">
+        <h1>Wireframes</h1>
+        <p>
+          Using Balsamiq, I created 3 wireframes of the redesigned website. Each
+          is for a different screen size (mobile, tablet, and desktop). Scroll
+          through each wireframe to show how it fixes the problems mentioned
+          earlier.
+        </p>
+        <h2>Desktop Wireframe</h2>
+        <div class="screenshot-container">
+          <img src="assets/wireframe-desktop.png" alt="desktop wireframe" />
+        </div>
+        <h2>Mobile Wireframe</h2>
+        <div class="screenshot-container">
+          <img
+            src="assets/wireframe-phone.png"
+            class="screenshot"
+            alt="mobile wireframe"
+          />
+        </div>
+        <h2>Tablet Wireframe</h2>
+        <div class="screenshot-container">
+          <img src="assets/wireframe-ipad.png" alt="tablet wireframe" />
+        </div>
+      </div>
+      <div id="styleguide" class="section">
+        <h1>Style Guide</h1>
+        <p>
+          This style guide was created using Figma. The logo and red color were
+          both taken from the original website. I changed the background color
+          to a beige, off-white color and made a new hover style. The icons were
+          all created with figma using the shapes tools. The font used here is
+          Roboto because Helvetica was not included in the Figma fonts, but for
+          the redesign I used Helvetica.
+        </p>
+        <img src="assets/styleguide.png" />
+      </div>
+      <div id="prototype" class="section">
+        <h1>Prototypes</h1>
+        <p>The following hi-fi prototypes were all created using Figma.</p>
+        <h2>Desktop Prototype</h2>
+        <div class="screenshot-container">
+          <img src="assets/hifi-desktop.png" />
+        </div>
+        <h2>Mobile Prototype</h2>
+        <div class="screenshot-container">
+          <img src="assets/hifi-phone.png" />
+        </div>
+        <h2>Tablet Prototype</h2>
+        <div class="screenshot-container">
+          <img src="assets/hifi-ipad.png" />
+        </div>
+      </div>
+      <div id="redesign" class="section">
+        <h1>Redesign</h1>
+        <p>
+          Now that we have identified the problems, created wireframes, and
+          prototypes, it is finally time to redesign the website.
+        </p>
+        <a href="redesign.html" target="_blank" rel="noopener noreferrer"
+          ><div class="button">Click here to see the redesign</div></a
+        >
+      </div>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
